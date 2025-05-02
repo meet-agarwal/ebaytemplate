@@ -325,7 +325,7 @@ footer#foot {
 }
 
 #footBot {
-    background: #fff;
+  
     padding: 5px 0
 }
 
@@ -1299,6 +1299,7 @@ footer#foot {
     padding: 10px;
     justify-content: space-between;
     align-items: center;
+    background-image: image-set('https://i.postimg.cc/RVF2WhgM/image.png');
 }
 
 /* Styling for the menu item */
@@ -1471,9 +1472,7 @@ img:hover {
     font-size: 1.3rem;
 }
 
-.specsRow table td {
-    text-align: end;
-}
+
 .specsRow table th {
     text-align: start;
     width: 20rem;
@@ -1737,65 +1736,74 @@ background-color: #e67e22;
 
 @media (max-width: 767px) {
     .comp-info-mobile-2nd-attem {
-        display: block; /* Show only on mobile screens */
-        width: 100%;
+        display: flex; /* Show only on mobile screens */
+        /* width: 100%; */
+        flex-direction: column;
+        /* text-align: start; */
+        margin: 1rem;
+        font: 400 19px 'Roboto Condensed', Arial, sans-serif;
+        text-align: justify;
+    color: #030200a1;
+        
     }
+   
 }
 
+        /* Hide all content sections by default */
+.comp-info-mobile-2nd-attem .content {
+    display: none;
+    /* Additional styling as needed */
+  }
+  
+  /* Show content when the corresponding checkbox is checked */
+  .comp-info-mobile-2nd-attem input[type="checkbox"]:checked + label + .content {
+    display: block;
+    /* Additional styling as needed */
+  }
+  
+  /* Style for the plus/minus indicators */
+  .comp-info-mobile-2nd-attem label {
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid #626262 !important;
+    font-weight: bold;
+  }
+  
+  .comp-info-mobile-2nd-attem .plus_in_mobile,
+  .comp-info-mobile-2nd-attem .minus_in_mobile {
+    position: absolute;
+    left: 0;
+    /* Additional positioning as needed */
+  }
+  
+  /* Show plus sign when checkbox is unchecked */
+  .comp-info-mobile-2nd-attem input[type="checkbox"] + label .plus_in_mobile {
+    display: inline;
+  }
+  
+  .comp-info-mobile-2nd-attem input[type="checkbox"]:checked + label .plus_in_mobile {
+    display: none;
+  }
+  
+  /* Show minus sign when checkbox is checked */
+  .comp-info-mobile-2nd-attem input[type="checkbox"] + label .minus_in_mobile {
+    display: none;
+  }
+  
+  .comp-info-mobile-2nd-attem input[type="checkbox"]:checked + label .minus_in_mobile {
+    display: inline;
+  }
 
-        .comp-info-mobile-2nd-attem {
-            /* width: 80%; */
-            margin-bottom: 2rem;
-        }
-        .comp-info-mobile-2nd-attem label {
-            display: block;
-            background: #e8e8e8a3;
-            padding: 1.8rem;
-            font-family: Arial, Helvetica, sans-serif;
-            color: goldenrod;
-            font-size: 2rem;
-            font-weight: bold;
-            cursor: pointer;
-            text-align: center;
-            
-            margin: 5px 0;
-            position: relative;
-        }
-        
-
-        
-        .comp-info-mobile-2nd-attem .content {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.5rem;
-            display: none;
-            background: white;
-            padding: 1.8rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-top: 5px;
-            text-align: start;
-
-            font-style: normal;
-        }
-        .comp-info-mobile-2nd-attem input[type="radio"] {
-            display: none;
-        }
-        .comp-info-mobile-2nd-attem input[type="radio"]:checked + .content {
-            display: block;
-            background-image: image-set('./image.png');
-        }
-        .comp-info-mobile-2nd-attem .btn {
-            display: block;
-            background: #0a2d53;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            border-radius: 5px;
-            margin-top: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
+  .input_mobile{
+    display: none;
+  }
+  
+    
         .usefulLinks{
             display: flex; flex-direction: row;color: black;
             align-items: center;
@@ -1804,7 +1812,9 @@ background-color: #e67e22;
         }
 
         .usLin{
-            margin-left: 4rem;align-items: start; text-align: start;
+            
+            align-items: start; text-align: start;
+            padding-left: 4rem;
         }
 
         .usLin p{
@@ -1921,7 +1931,8 @@ background-color: #e67e22;
          font-size: 2rem;text-align: center;
     }
     .footer_foot_foot_lasr{
-        background-color: #e8e8e8a3; width: 100%;
+        /* background-color: #e8e8e8a3;  */
+        width: 100%;
     }
     #usefull_links_vala_div{
         font-size: 1.5rem;
@@ -2090,6 +2101,9 @@ background-color: #e67e22;
              padding: 0.3rem;
            
         }
+        .usLin{
+            padding: 0;
+        }
         #table_specification_product{
             width: 100%;
         }
@@ -2114,6 +2128,18 @@ background-color: #e67e22;
       /* === MOBILE OPTIMIZED LAYOUT (for screens up to 768px) === */
 @media (max-width: 768px) {
     /* Body Layout */
+
+    #product_para{
+        display: none;
+    }
+
+    .plus_in_mobile{
+        padding-right: 1rem;
+    }
+    .minus_in_mobile{
+        padding-right: 1rem;
+    }
+
     body {
       margin: 0;
       padding: 1rem;
@@ -2203,12 +2229,12 @@ background-color: #e67e22;
     #table_specification_product table td,
     #table_specification_product table th {
       padding: 10px;
-      text-align: center;
+     
     }
   
     /* Footer */
     #foot {
-      background: #f5f5f5;
+      /* background: #f5f5f5; */
       padding: 20px 0;
       font-size: 0.9rem;
       width: 100%;
@@ -2292,7 +2318,12 @@ background-color: #e67e22;
         border-right: none;
         text-align: center;
         justify-content: center;
-        width: 90vw;
+        width: 80vw;
+        /* display: grid; */
+        border-bottom: solid ;
+        /* border-top: solid ; */
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
     }
   }
   
