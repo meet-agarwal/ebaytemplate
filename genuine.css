@@ -248,16 +248,16 @@ img {
 #promMonBack {
     float: left;
     width: 49%;
-    background: url(https://i.postimg.cc/Y0fKcnkq/download.png) no-repeat center left;
-    background-size: auto 80px;
+    background: url(https://i.postimg.cc/MGQFcRBw/refund-Logo.png) no-repeat center left;
+    background-size: auto 75px;
     border-right: 1px solid #e5e3e3
 }
 
 #promService {
     float: right;
     width: 49%;
-    background: url(https://i.postimg.cc/pTjMCV6j/download-1.png) no-repeat center left;
-    background-size: auto 80px
+    background: url(https://i.postimg.cc/fRkFN1TJ/customer-Service-Logo.png) no-repeat center left;
+    background-size: auto 75px
 }
 
 
@@ -467,12 +467,12 @@ footer#foot {
  
 
     #promMonBack {
-        background: url(https://i.postimg.cc/Y0fKcnkq/download.png) no-repeat center top;
+        background: url(https://i.postimg.cc/MGQFcRBw/refund-Logo.png) no-repeat center top;
         background-size: auto 80px
     }
 
     #promService {
-        background: url(https://i.postimg.cc/pTjMCV6j/download-1.png) no-repeat center top;
+        background: url(https://i.postimg.cc/fRkFN1TJ/customer-Service-Logo.png) no-repeat center top;
         background-size: auto 80px
     }
 
@@ -655,13 +655,12 @@ footer#foot {
     }
 
     #promMonBack {
-        background: url(https://i.postimg.cc/Y0fKcnkq/download.png) no-repeat center top;
+        background: url(https://i.postimg.cc/MGQFcRBw/refund-Logo.png) no-repeat center top;
         background-size: auto 80px
     }
 
     #promService {
-        background: url(https://i.postimg.cc/pTjMCV6j/download-1.png
-) no-repeat center top;
+        background: url(https://i.postimg.cc/fRkFN1TJ/customer-Service-Logo.png) no-repeat center top;
         background-size: auto 80px
     }
 
@@ -837,13 +836,12 @@ footer#foot {
     }
 
     #promMonBack {
-        background: url(https://i.postimg.cc/Y0fKcnkq/download.png) no-repeat center top;
+        background: url(https://i.postimg.cc/MGQFcRBw/refund-Logo.png) no-repeat center top;
         background-size: auto 80px
     }
 
     #promService {
-        background: url(https://i.postimg.cc/pTjMCV6j/download-1.png
-) no-repeat center top;
+        background: url(https://i.postimg.cc/fRkFN1TJ/customer-Service-Logo.png) no-repeat center top;
         background-size: auto 80px
     }
 
@@ -1021,7 +1019,7 @@ footer#foot {
         float: none;
         width: 100%;
         margin-bottom: 15px;
-        background: url(https://i.postimg.cc/Y0fKcnkq/download.png) no-repeat center top;
+        background: url(https://i.postimg.cc/MGQFcRBw/refund-Logo.png) no-repeat center top;
         background-size: auto 80px;
         border-right: none
     }
@@ -1029,7 +1027,7 @@ footer#foot {
     #promService {
         float: none;
         width: 100%;
-        background: url(https://i.postimg.cc/pTjMCV6j/download-1.png
+        background: url(https://i.postimg.cc/fRkFN1TJ/customer-Service-Logo.png
 ) no-repeat center top;
         background-size: auto 80px
     }
@@ -1217,7 +1215,7 @@ footer#foot {
         float: none;
         width: 100%;
         margin-bottom: 15px;
-        background: url(https://i.postimg.cc/Y0fKcnkq/download.png) no-repeat center top;
+        background: url(https://i.postimg.cc/MGQFcRBw/refund-Logo.png) no-repeat center top;
         background-size: auto 80px;
         border-right: none
     }
@@ -1225,7 +1223,7 @@ footer#foot {
     #promService {
         float: none;
         width: 100%;
-        background: url(https://i.postimg.cc/pTjMCV6j/download-1.png
+        background: url(https://i.postimg.cc/fRkFN1TJ/customer-Service-Logo.png
 ) no-repeat center top;
         background-size: auto 80px
     }
@@ -1320,6 +1318,7 @@ footer#foot {
 
 /* The popup menu */
 .popup {
+    border-radius: 0.5rem;
     z-index: 100;
     display: none;
     position: absolute;
@@ -1350,10 +1349,11 @@ footer#foot {
 
 /* Style the label */
 .toggle-label {
-    color: inherit;
+    /* color: #c18d09 ; */
+    color : #626262 !important;
     cursor: pointer;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -1773,12 +1773,16 @@ background-color: #e67e22;
             border: 1px solid #ccc;
             border-radius: 5px;
             margin-top: 5px;
+            text-align: start;
+
+            font-style: normal;
         }
         .comp-info-mobile-2nd-attem input[type="radio"] {
             display: none;
         }
         .comp-info-mobile-2nd-attem input[type="radio"]:checked + .content {
             display: block;
+            background-image: image-set('./image.png');
         }
         .comp-info-mobile-2nd-attem .btn {
             display: block;
@@ -1866,7 +1870,8 @@ background-color: #e67e22;
         display: flex !important;
     }
     #tmpShell_menu{
-        color:#daa520ad !important;
+        /* color:#daa520ad !important; */
+        color: #626262 !important;
          margin: 0 0 0 0rem !important;
          font-size: 4rem !important; 
          align-items: center !important;
@@ -1886,7 +1891,9 @@ background-color: #e67e22;
         z-index: 1 !important;
     }
     #bellow_banner_css{
-        padding: 0px; color: goldenrod;text-align: center;
+        padding: 0px; 
+        color: #626262 !important;
+        text-align: center;
     }
     #banner_bellow_bellow_imsg{
         aspect-ratio: 1/1;
@@ -1908,7 +1915,10 @@ background-color: #e67e22;
         width: 100%;padding: 20px;  background-color: #f8f8f8; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); text-align: center;
     }
     #bellow_id_promise_seal{
-        padding: 0px; color: goldenrod; font-size: 2rem;text-align: center;
+        padding: 0px; 
+        color:    goldenrod; 
+         color:#626262 !important ; 
+         font-size: 2rem;text-align: center;
     }
     .footer_foot_foot_lasr{
         background-color: #e8e8e8a3; width: 100%;
@@ -1946,11 +1956,13 @@ background-color: #e67e22;
     }
     #New_arrivals_anchor{
         text-decoration: none;
-        color: black;
+        /* color: black; */
+        color: #626262 !important;
     }
     #On_sale_anchor{
         text-decoration: none;
-        color: black;
+        /* color: black; */
+        color: #626262 !important;
     }
     .luxury_jwelery_anchor{
         text-decoration: none;
@@ -2047,7 +2059,7 @@ background-color: #e67e22;
     }
     #about_link_button {
        margin-top: 1.5rem;
-        color: white;
+        color: black;
         padding: 12px 24px;
         border: none;
         border-radius: 8px;
@@ -2064,7 +2076,7 @@ background-color: #e67e22;
       }
       
       #about_link_button:active {
-        background-color: #3730a3; /* Indigo-800 */
+        background-color: #ffea98; 
         transform: scale(0.98);
       }
       @media (max-width: 768px) {
@@ -2269,6 +2281,9 @@ background-color: #e67e22;
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       }
+      #bellow_id_promise_seal {
+        font-size: 1.5rem;
+      }
     
     
   }
@@ -2277,7 +2292,19 @@ background-color: #e67e22;
         border-right: none;
         text-align: center;
         justify-content: center;
-        width: 13rem;
+        width: 90vw;
     }
+  }
+  
+
+  #button_a_link{
+    text-decoration: none;
+  }
+
+  .popup a:last-child div {
+    border-bottom: none;
+  }
+  .popup{
+    font-size: 1.2rem;
   }
   
